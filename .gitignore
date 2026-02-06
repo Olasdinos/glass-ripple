@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.png
+.playwright-mcp
+.gif-frames
+video/out
+video/node_modules
+*.remotion
+demo-preview.*

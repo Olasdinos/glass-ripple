@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Ripple — WebGL2 Water Ripple Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="canvas-wrap">
+        <canvas id="canvas"></canvas>
+        <div class="overlay overlay--radial"></div>
+        <div class="overlay overlay--fade"></div>
+      </div>
+      <div id="text-overlay">
+        <h1 id="title">Claude</h1>
+        <p class="credit">
+          Built by <a href="https://github.com/ZenAlexa" target="_blank" rel="noopener">Ziming Wang</a>
+          &middot;
+          <a href="https://github.com/ZenAlexa/glass-ripple" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+      <nav id="icon-picker" aria-label="Icon presets"></nav>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>

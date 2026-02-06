@@ -1,0 +1,80 @@
+{
+  "name": "glass-ripple",
+  "version": "2.1.0",
+  "description": "The hero effect for the AI agent era — GPU-accelerated glass ripple with CRT retro aesthetics, 52+ AI brand icons, 11-pass WebGL2 shader pipeline",
+  "author": "Ziming Wang",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenAlexa/glass-ripple.git"
+  },
+  "homepage": "https://github.com/ZenAlexa/glass-ripple#readme",
+  "bugs": {
+    "url": "https://github.com/ZenAlexa/glass-ripple/issues"
+  },
+  "keywords": [
+    "webgl",
+    "webgl2",
+    "ripple",
+    "glass",
+    "crt",
+    "retro",
+    "three.js",
+    "threejs",
+    "shader",
+    "glsl",
+    "wave-simulation",
+    "post-processing",
+    "visual-effects",
+    "animation",
+    "canvas",
+    "gpu",
+    "typescript",
+    "ai",
+    "ai-agent",
+    "landing-page",
+    "hero-section",
+    "ai-icons",
+    "llm"
+  ],
+  "main": "./dist/glass-ripple.js",
+  "module": "./dist/glass-ripple.js",
+  "types": "./dist/glass-ripple.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/glass-ripple.js",
+      "types": "./dist/glass-ripple.d.ts"
+    },
+    "./icons": {
+      "import": "./dist/icons/index.js",
+      "types": "./dist/icons/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "vite build --config vite.lib.config.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build:lib"
+  },
+  "peerDependencies": {
+    "three": ">=0.150.0"
+  },
+  "devDependencies": {
+    "@lobehub/icons": "^4.2.0",
+    "@types/three": "^0.182.0",
+    "playwright": "^1.58.2",
+    "three": "^0.170.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.0.0"
+  }
+}

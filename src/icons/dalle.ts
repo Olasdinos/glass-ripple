@@ -1,0 +1,11 @@
+import type { IconPreset } from '../types';
+
+export const dalle: IconPreset = {
+  name: 'DALL-E',
+  category: 'Creative AI',
+  color: '#10A37F',
+  icon: {
+    svg: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 10h4.8v5H0z" fill="#FFFF67"/><path d="M4.8 10h4.8v5H4.8z" fill="#43FFFF"/><path d="M9.6 10h4.8v5H9.6z" fill="#51DA4B"/><path d="M14.4 10h4.8v5h-4.8z" fill="#FF6E3D"/><path d="M19.2 10H24v5h-4.8z" fill="#3C46FF"/></svg>',
+    scale: 0.7,
+  },
+};
