@@ -53,11 +53,15 @@ if (tpContainer) {
   appearFolder.addBinding(params, 'tint', { label: 'tint color' });
   appearFolder.addBinding(params, 'background', { label: 'bg color' });
 
-  // Listen for changes and update GlassRipple
-  // Note: GlassRipple doesn't expose wave config setters publicly,
-  // so tint and background are the realtime-updateable params.
-  // Wave params would need a re-instantiation in a real app.
+  // Listen for changes and update GlassRipple in real time
   pane.on('change', () => {
+    gr.setWave({
+      damping: params.damping,
+      speed: params.speed,
+      radius: params.radius,
+      intensity: params.intensity,
+      momentum: params.momentum,
+    });
     gr.setTint(params.tint);
   });
 }
@@ -105,6 +109,13 @@ const resetBtn = document.getElementById('reset-btn');
 if (resetBtn) {
   resetBtn.addEventListener('click', () => {
     Object.assign(params, { ...DEFAULTS });
+    gr.setWave({
+      damping: DEFAULTS.damping,
+      speed: DEFAULTS.speed,
+      radius: DEFAULTS.radius,
+      intensity: DEFAULTS.intensity,
+      momentum: DEFAULTS.momentum,
+    });
     gr.setTint(DEFAULTS.tint);
     // Re-create pane to reflect reset values
     if (tpContainer) {
@@ -119,7 +130,14 @@ if (resetBtn) {
       const appearFolder = pane.addFolder({ title: 'Appearance' });
       appearFolder.addBinding(params, 'tint', { label: 'tint color' });
       appearFolder.addBinding(params, 'background', { label: 'bg color' });
-      pane.on('change', () => { gr.setTint(params.tint); });
+      pane.on('change', () => {
+        gr.setWave({
+          damping: params.damping, speed: params.speed,
+          radius: params.radius, intensity: params.intensity,
+          momentum: params.momentum,
+        });
+        gr.setTint(params.tint);
+      });
     }
   });
 }

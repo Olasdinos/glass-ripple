@@ -240,6 +240,14 @@ export class GlassRipple {
 
   // ── Public API ────────────────────────────────────────────────────────
 
+  setWave(opts: Partial<WaveConfig>): void {
+    Object.assign(this.waveConfig, opts);
+    if (opts.speed !== undefined) this.waveSimMat.uniforms.uSpeed.value = opts.speed;
+    if (opts.damping !== undefined) this.waveSimMat.uniforms.uDamping.value = opts.damping;
+    if (opts.radius !== undefined) this.waveSimMat.uniforms.uRadius.value = opts.radius;
+    if (opts.intensity !== undefined) this.waveSimMat.uniforms.uIntensity.value = opts.intensity;
+  }
+
   setTint(hex: string): void {
     const r = parseInt(hex.slice(1, 3), 16) / 255;
     const g = parseInt(hex.slice(3, 5), 16) / 255;

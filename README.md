@@ -6,6 +6,8 @@
 
 Every AI company needs a landing page that feels alive. Glass-ripple is an 11-pass WebGL2 shader pipeline that turns any `<canvas>` into a reactive, physical surface — with real-time wave physics, CRT retro aesthetics, and 52+ built-in brand icons for the entire AI ecosystem.
 
+[![npm version](https://img.shields.io/npm/v/glass-ripple?color=D97757)](https://www.npmjs.com/package/glass-ripple)
+[![npm downloads](https://img.shields.io/npm/dm/glass-ripple)](https://www.npmjs.com/package/glass-ripple)
 [![license](https://img.shields.io/github/license/ZenAlexa/glass-ripple)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/lang-TypeScript-3178c6)](https://www.typescriptlang.org/)
 [![WebGL2](https://img.shields.io/badge/WebGL2-GLSL%20300%20ES-orange)]()
@@ -18,7 +20,7 @@ Every AI company needs a landing page that feels alive. Glass-ripple is an 11-pa
 
 <br />
 
-[GitHub](https://github.com/ZenAlexa/glass-ripple) · [Report Bug](https://github.com/ZenAlexa/glass-ripple/issues)
+[Live Demo](https://zenalexa.github.io/glass-ripple/) · [npm](https://www.npmjs.com/package/glass-ripple) · [GitHub](https://github.com/ZenAlexa/glass-ripple) · [Report Bug](https://github.com/ZenAlexa/glass-ripple/issues)
 
 </div>
 
@@ -55,7 +57,7 @@ Three lines. Zero config. Ship it.
 - **11-pass shader pipeline** — wave sim → normal map → blur → composite → halftone ×2 → chromatic aberration → CRT → vignette
 - **Real-time wave physics** — 2D wave equation at ¼ resolution with continuous mouse wake via line-segment distance
 - **52+ AI ecosystem icons** — models, agents, dev tools, creative AI, cloud infra. Tree-shakeable, import only what you need
-- **Runtime everything** — swap icons, tint colors, toggle effects, adjust wave physics — all live, no reload
+- **Runtime everything** — swap icons, tint colors, wave physics (`setWave()`) — all live, no reload
 - **TypeScript-first** — full type definitions, discriminated union for icon configs, async-aware API
 - **Single `<canvas>`** — no extra DOM, no iframes, no dependencies beyond Three.js
 - **Extensible** — bring any SVG path or full SVG markup. The 52 built-ins are just the start — PRs for new icons land in hours
@@ -226,6 +228,14 @@ Creates the renderer, attaches event listeners, and starts the animation loop.
 ### `setIcon(icon: IconConfig): Promise<void>`
 
 Swaps the displayed icon with a crossfade transition. For `svgPath` icons this resolves instantly. For `svg` string icons the image is decoded before rendering.
+
+### `setWave(opts: Partial<WaveConfig>): void`
+
+Updates wave simulation parameters at runtime. Pass only the values you want to change.
+
+```ts
+ripple.setWave({ damping: 0.9, intensity: 30 });
+```
 
 ### `setTint(hex: string): void`
 

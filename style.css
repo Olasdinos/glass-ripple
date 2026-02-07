@@ -84,10 +84,10 @@ section, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 100vh;
   text-align: center;
-  padding: 60px 24px 40px;
+  padding: 60px 24px 80px;
   position: relative;
 }
 
@@ -200,12 +200,35 @@ section, footer {
   60% { transform: translateY(4px); }
 }
 
+/* ── Backdrop for all sections below hero ───────────────────────────────── */
+#features,
+#playground,
+#gallery,
+#code,
+#footer {
+  background: rgba(8, 8, 14, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+}
+
 /* ══════════════════════════════════════════════════════════════════════════
    FEATURES
    ══════════════════════════════════════════════════════════════════════════ */
 #features {
   padding-top: 60px;
   padding-bottom: 80px;
+}
+
+#features::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  left: 0;
+  right: 0;
+  height: 160px;
+  background: linear-gradient(to bottom, transparent, rgba(8, 8, 14, 0.92));
+  pointer-events: none;
 }
 
 .features-grid {
